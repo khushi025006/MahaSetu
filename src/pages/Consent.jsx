@@ -610,7 +610,7 @@ const data = response.data;
 
         const response =
   await axios.post(
-    "http://localhost:5000/api/applications/submit",
+    `${import.meta.env.VITE_API_URL}/api/applications/submit`,
     {
       ...dataToShare,
 
